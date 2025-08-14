@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width:100%;
+    background-color: aqua;
+}
+#main{
+    height:100%;
+    width: 100%; 
+    display: flex; 
+    align-items: center;
+    justify-content: center; 
+}
+@keyframes rotate{
+    from{transform: rotate(0deg);}
+    to{transform: rotate(360deg);}
+ 0% {background-color:red; left:0px; top:0px;}
+25% {background-color:yellow; left:200px; top:0px;}
+50% {background-color:blue; left:200px; top:200px;}
+75% {background-color:green; left:0px; top:200px;}
+100% {background-color:rgb(255, 0, 195); left:0px; top:0px;}
+}
+.shape{
+    margin-left: 10px; margin-top: 10px;
+    width: 200px;
+    height:200px;
+    display: flex;
+    border: 1px solid black;
+    align-items: center; 
+    justify-content: center;
+     animation: rotate 5s linear infinite;
+    animation-iteration-count: 5;
+}
+#square:hover{
+    background-color: red;
+}
+#circle{
+border-radius: 50%;    
+}
+#circle:hover{
+    background-color: blue;
+}
+#round{
+border-radius: 50%;    
+}
+#round:hover{
+    background-color: rgb(208, 255, 0);
+}
+#diamond{
+    rotate: 45deg;
+    margin-top: 50px;
+}
+#diamond:hover{
+    background-color: green;
+
+}
+#diamond h1{
+    rotate: -45deg;
+}
